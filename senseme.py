@@ -1,7 +1,7 @@
 import subprocess
 flag = 0
-addrAnkit = '78:CB:AF:A7:62:36'
-addrHC_05 = '98:D3:31:50:27:45'
+addrAnkit = 'your_device_bluetooth_address'
+addrHC_05 = 'your_bluetooth_module address'
 while flag < 1:
 	p = subprocess.Popen(['hcitool', 'scan'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 	output, err = p.communicate()
