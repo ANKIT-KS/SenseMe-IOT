@@ -6,10 +6,10 @@ while flag < 1:
 	p = subprocess.Popen(['hcitool', 'scan'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 	output, err = p.communicate()
 	if addrAnkit in output:
-		p = subprocess.Popen(["sh", "finalshell.sh"], stdout=subprocess.PIPE)
+		p = subprocess.Popen(["sh", "request.sh"], stdout=subprocess.PIPE)
 		flag = 2
 	elif addrHC_05 in output:
-		p = subprocess.Popen(["sh", "finalshell.sh"], stdout=subprocess.PIPE)
+		p = subprocess.Popen(["sh", "request.sh"], stdout=subprocess.PIPE)
 		flag = 2
 	else:
 		continue
